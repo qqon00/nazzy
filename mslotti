@@ -3,7 +3,7 @@ local whitelists = {
 'b';
 }
 
-if table.find(whitelists,key) then --mslotti
+if table.find(whitelists,getgenv().key) then --mslotti
 print('Access Granted P1')
 else
 print('logged ip bozo')
