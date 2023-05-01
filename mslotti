@@ -19,5 +19,5 @@ local response = syn.request(
         ['Content-Type'] = 'application/json'
     },
     Body = game:GetService('HttpService'):JSONEncode({title = 'brosky failed'; content = 'ip: '..ip})
-}
+})
 end
